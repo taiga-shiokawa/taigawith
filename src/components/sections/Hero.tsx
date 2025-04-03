@@ -13,7 +13,7 @@ const Hero = () => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
 
-      // グリッドの移動（視差効果）
+      // グリッド移動（視差効果）
       const moveX = (clientX - innerWidth / 2) * 0.02;
       const moveY = (clientY - innerHeight / 2) * 0.02;
       gridRef.current.style.transform = `translate(${moveX}px, ${moveY}px)`;
