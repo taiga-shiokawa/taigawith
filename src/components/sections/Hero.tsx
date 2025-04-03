@@ -5,7 +5,6 @@ import Container from '../common/Container';
 
 const Hero = () => {
   const gridRef = useRef<HTMLDivElement>(null);
-  const scanlineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
