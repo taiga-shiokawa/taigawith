@@ -20,16 +20,44 @@ const Projects = () => {
   const projects: Project[] = [
     {
       title: 'sokodoko',
-      description: 'MERNスタックとOpenAI APIを使用したフロアマップ検索アプリです。シンプルなUIを意識し、レスポンス精度も高いです。',
+      description: '【個人開発】MERNスタックとOpenAI APIを使用したフロアマップ検索アプリです。シンプルなUIを意識し、レスポンス精度も高いです。',
       imageUrl: '/projects/portfolio-1.png',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
       githubUrl: 'https://github.com/taiga-shiokawa/floor-map-app',
       liveUrl: 'https://floor-map-app.onrender.com/'
     },
+    {
+      title: 'ひで歯科クリニック',
+      description: '【LP】山口県山口市にある歯科クリニックのLPを純粋なHTML/CSS/JavaScript(JQuery)で実装しました。',
+      imageUrl: '/projects/hide-dent.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://hide-dent.com/'
+    },
+    {
+      title: 'ファミリー歯科医院',
+      description: '【LP】埼玉県志木市本町にある歯科クリニックのLPを純粋なHTML/CSS/JavaScriptで実装しました。',
+      imageUrl: '/projects/family-dent.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.familyshika-shiki.com/'
+    },
+    {
+      title: '波多野デジタルオフィス新都心',
+      description: '【LP】埼玉県さいたま市大宮区にある歯科クリニックのLPを純粋なHTML/CSS/JavaScriptで実装しました。',
+      imageUrl: '/projects/hatano-dent.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.hatanoshika-ortho.com/'
+    },
+    {
+      title: 'グリーン歯科クリニック総社',
+      description: '【コラム】岡山県総社市岡谷にある歯科クリニックのコラムページを純粋なHTML/CSS/JavaScriptで実装しました。',
+      imageUrl: '/projects/green-dent-column.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.yamate-green.com/column/'
+    },
   ];
 
-  const visibleProjects = showAll ? projects : projects.slice(0, 4);
-  const hasMoreProjects = projects.length > 4;
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
+  const hasMoreProjects = projects.length > 3;
 
   return (
     <section id="projects" className="py-20">

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from '../common/Container';
 import { FaGithub, FaEnvelope } from 'react-icons/fa';
 import { 
@@ -50,13 +51,14 @@ const About = () => {
           <div className="relative aspect-square w-full max-w-md mx-auto">
             <div className="absolute inset-0 bg-accent/10 backdrop-blur-sm rounded-2xl" />
             <div className="absolute inset-0 flex items-center justify-center text-accent/50">
-              <svg
+              {/* <svg
                 className="w-24 h-24"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
-              </svg>
+              </svg> */}
+              <Image src="/projects/taiga.jpg" alt="Profile" width={400} height={400} />
             </div>
           </div>
           <div className="space-y-6">
