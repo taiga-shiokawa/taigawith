@@ -44,10 +44,23 @@ const About = () => {
     { icon: FaGithub, href: 'https://github.com/taiga-shiokawa', label: 'GitHub' }
   ];
 
+  const workExperience = [
+    {
+      period: '2023年10月 - 2024年10月',
+      position: 'バックエンドエンジニア',
+      details: 'Salesforceへ移行するためのAPI開発'
+    },
+    {
+      period: '2024年10月 - 現在',
+      position: 'コーダー / フロントエンドエンジニア',
+      details: 'LP/HP制作とECサイトのフロントエンド開発'
+    }
+  ];
+
   return (
     <section id="about" className="py-20 bg-primary/30">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="relative aspect-square w-full max-w-md mx-auto">
             <div className="absolute inset-0 bg-accent/10 backdrop-blur-sm rounded-2xl" />
             <div className="absolute inset-0 flex items-center justify-center text-accent/50">
@@ -61,17 +74,40 @@ const About = () => {
               <Image src="/projects/taiga.jpg" alt="Profile" width={400} height={400} />
             </div>
           </div>
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">About Me</h2>
-            <div className="space-y-4 text-white/80">
-              <p>
-                現在は、WEB開発会社にてフロントエンド開発とLP制作を担当しています。
-                フルスタック開発の経験を活かし、幅広い技術スタックを用いた開発が可能です。
-              </p>
-              <p>
-                AI駆動開発を取り入れることで、最速での価値提供を実現します。
-                常に最新の技術トレンドをキャッチアップし、効率的な開発を心がけています。
-              </p>
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold">About Me</h2>
+              <div className="space-y-4 text-white/80">
+                <p>
+                  現在は、WEB開発会社にてフロントエンド開発とLP制作を担当しています。
+                  フルスタック開発の経験を活かし、幅広い技術スタックを用いた開発が可能です。
+                </p>
+                <p>
+                  AI駆動開発を取り入れることで、最速での価値提供を実現します。
+                  常に最新の技術トレンドをキャッチアップし、効率的な開発を心がけています。
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold">経歴</h3>
+              
+              <div className="space-y-4">
+
+                <div>
+                  <h4 className="text-lg font-medium mb-3">職歴</h4>
+                  <div className="space-y-4">
+                    {workExperience.map((work, index) => (
+                      <div key={index} className="bg-white/5 p-4 rounded-lg">
+                        <div className="text-sm text-white/60">{work.period}</div>
+                        <div className="font-medium">{work.company}</div>
+                        <div className="text-white/80">{work.position}</div>
+                        <div className="text-sm text-white/70">{work.details}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-6">
