@@ -100,7 +100,6 @@ const About = () => {
                     {workExperience.map((work, index) => (
                       <div key={index} className="bg-white/5 p-4 rounded-lg">
                         <div className="text-sm text-white/60">{work.period}</div>
-                        <div className="font-medium">{work.company}</div>
                         <div className="text-white/80">{work.position}</div>
                         <div className="text-sm text-white/70">{work.details}</div>
                       </div>
