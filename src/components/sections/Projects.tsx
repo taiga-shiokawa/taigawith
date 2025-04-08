@@ -34,13 +34,6 @@ const Projects = () => {
       liveUrl: 'https://hide-dent.com/'
     },
     {
-      title: 'ファミリー歯科医院',
-      description: '【LP】埼玉県志木市本町にある歯科クリニックのLPを純粋なHTML/CSS/JavaScriptで実装しました。',
-      imageUrl: '/projects/family-dent.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://www.familyshika-shiki.com/'
-    },
-    {
       title: '波多野デジタルオフィス新都心',
       description: '【LP】埼玉県さいたま市大宮区にある歯科クリニックのLPを純粋なHTML/CSS/JavaScriptで実装しました。',
       imageUrl: '/projects/hatano-dent.png',
