@@ -19,12 +19,11 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: 'sokodoko',
-      description: '【個人開発】MERNスタックとOpenAI APIを使用したフロアマップ検索アプリです。シンプルなUIを意識し、レスポンス精度も高いです。',
-      imageUrl: '/projects/portfolio-1.png',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/taiga-shiokawa/floor-map-app',
-      liveUrl: 'https://floor-map-app.onrender.com/'
+      title: 'モンテドール求人ページ',
+      description: '【LP】沖縄県宮古島市にあるバナナケーキ屋の求人ページLPを純粋なHTML/CSS/JavaScript(JQuery)で実装しました。',
+      imageUrl: '/projects/monte-rec.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://www.montedoll.com/cakesale.html'
     },
     {
       title: 'ひで歯科クリニック',
